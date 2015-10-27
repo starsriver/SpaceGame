@@ -1,14 +1,35 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>打飞机</title>
-		<script>
-			function initialize()
-			{}
-		</script>
+        <style type="text/css">
+        @import url(css/mainstyle.css);
+        </style>
+		<title>太空大战</title>
 	</head>
-	<body style="text-align:center" onload="initialize()">
-		<canvas id="can" width="480" height="850">你的浏览器不支持canvas</canvas>
+	<body>
+        <div class="game">
+            <div id="gameStart">
+                <span id="gs-start">游戏开始</span>
+                <br/>
+                <br/>
+                <span>游戏说明：方向键移动，按“Z” “C”选择战机</span>
+            </div>
+            <div class="movebg"></div>
+            <canvas id='cas' width="700",height="750">您的浏览器不支持canvas</canvas>
+            <button id="god">叶良辰</button>
+            <button id="verygod">龙傲天</button>
+            <button id="pretygod">赵日天</button>
+            <button id="nogod">！！OMG！！</button>
+        </div>
+        <div class="showSomething">
+            <div id="booms">爆炸使用情况(已使用/储存总量)：</div>
+            <div id="missle">子弹使用情况(已使用/储存总量)：</div>
+        </div>
 	</body>
+    <script src="js/data.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/Sprite.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/control.js"></script>
 </html>
