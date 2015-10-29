@@ -240,7 +240,7 @@ var stage=
                             ctx.fillText("level:"+(myplan.fireLevel===4?"Max":myplan.fireLevel)+"        Speed:"+((80-myplan.firePerFrame)===70?"Max":(80-myplan.firePerFrame)),0,canvas.height-18);
                             ctx.fillText("Points:"+point+"   死亡次数:"+dieNum,0,18);
                             ctx.textAlign="right";
-                            ctx.fillText("Tips:按方向键移动，按“Z”“C”建选择战机",canvas.width-10,18);
+                            ctx.fillText("Tips:按方向键移动，按“Z”“C”建旋转战机",canvas.width-10,18);
                             if(foodDate===null)
                             {
                                 foodDate=new Date();
